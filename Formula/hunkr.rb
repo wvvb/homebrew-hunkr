@@ -5,21 +5,21 @@
 class Hunkr < Formula
   desc "Terminal PR review for humans and agents"
   homepage "https://github.com/wvvb/hunkr"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wvvb/hunkr/releases/download/v0.2.0/hunkr_0.2.0_darwin_amd64.tar.gz"
-      sha256 "05f960094da7d57edc72b8d8707fbe31e2acda6546893e768cf89d1433e0c80b"
+      url "https://github.com/wvvb/hunkr/releases/download/v0.2.1/hunkr_0.2.1_darwin_amd64.tar.gz"
+      sha256 "ae5115ba05d4d046a037b0aa33ff6b79bbe879e04e6acffd050f835e18b964c7"
 
       define_method(:install) do
         bin.install "hunkr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wvvb/hunkr/releases/download/v0.2.0/hunkr_0.2.0_darwin_arm64.tar.gz"
-      sha256 "42efb2481f09001300bd301db71e7e55b8f42a7e2560107f42bacab9981fe1cd"
+      url "https://github.com/wvvb/hunkr/releases/download/v0.2.1/hunkr_0.2.1_darwin_arm64.tar.gz"
+      sha256 "59ab614a667209957ebe87e4e1b56599a38b146eea7e826678a98521e05fd250"
 
       define_method(:install) do
         bin.install "hunkr"
@@ -29,15 +29,15 @@ class Hunkr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wvvb/hunkr/releases/download/v0.2.0/hunkr_0.2.0_linux_amd64.tar.gz"
-      sha256 "84478b1d1ff61881ccdd24d52e9dade5f72db20a3e231f3a3bd2e59e751cb58b"
+      url "https://github.com/wvvb/hunkr/releases/download/v0.2.1/hunkr_0.2.1_linux_amd64.tar.gz"
+      sha256 "efae05684ee17d72a62d7fd82ec3c9218e7202a87b9b5c19241d774ec86c3212"
       define_method(:install) do
         bin.install "hunkr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wvvb/hunkr/releases/download/v0.2.0/hunkr_0.2.0_linux_arm64.tar.gz"
-      sha256 "63ebced335e4065722549a798878f6e646c6071dfa53a4a6ab285c416a945d21"
+      url "https://github.com/wvvb/hunkr/releases/download/v0.2.1/hunkr_0.2.1_linux_arm64.tar.gz"
+      sha256 "a4005e7399243223b163150891e7fd9a9432344dcc973a1243882541818baabd"
       define_method(:install) do
         bin.install "hunkr"
       end
